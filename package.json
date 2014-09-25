@@ -1,0 +1,26 @@
+{
+  "name": "wdws-bower",
+  "version": "0.0.0",
+  "description": "Manipulate Bower component installs via WDWS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/divshot/wdws-bower.git"
+  },
+  "keywords": [
+    "wdws",
+    "bower"
+  ],
+  "author": "Michael Bleigh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/divshot/wdws-bower/issues"
+  },
+  "homepage": "https://github.com/divshot/wdws-bower",
+  "dependencies": {
+    "bower": "^1.3.11"
+  }
+}
