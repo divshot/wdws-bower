@@ -8,7 +8,7 @@ module.exports = function() { return function(server, cmd) {
   cmd('install', function(params, fn) {
     var socket = this;
     
-    bower.commands.install(params.packages, {save: params.save}, config).on('end', function(installed) {
+    bower.commands.install(params.packages, {save: params.save, forceLatest: params.forceLatest}, config).on('end', function(installed) {
       console.log('ended')
       fn(null, installed);
     }).on('error', function(err) {
