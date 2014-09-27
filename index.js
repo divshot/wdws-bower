@@ -18,5 +18,15 @@ module.exports = function() { return function(server, cmd) {
       socket.pm(params.pid, 'log', log.message);
     });
   });
+  
+  cmd('list', function(params, fn) {
+    var socket = this;
+    
+    bower.commands.list({paths: true}, config).on('end', function(list) {
+      fn(null, list);
+    }).on('error', function(err) {
+      fn(err);
+    });
+  });
     
 }}
